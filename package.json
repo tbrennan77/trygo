@@ -7,5 +7,8 @@
     "gulp-changed-in-place": "^2.3.0",
     "mq-sass": "^0.8.0",
     "parallelshell": "^3.0.2"
+  },
+  "scripts": {
+    "watch": "parallelshell 'bundle exec jekyll build --watch' 'gulp watch'"
   }
 }
