@@ -1,2 +1,35 @@
 // Layout
 // ==================================================
+.section {
+  backgorund-color: $white;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include mq(medium) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @include mq(medium) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.section--gray-darker {
+  color: $white;
+  background-color: $gray-darker;
+}
+
+.container {
+  max-width: 1000px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(medium) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
