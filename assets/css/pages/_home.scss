@@ -150,3 +150,118 @@
     opacity: 0;
   }
 }
+
+// Bible Distribution
+// ==================================================
+.section--bible-distribution {
+  text-align: center;
+  background-color: $yellow;
+  background: $yellow url("../images/bible-distribution-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.bible-distribution__card {
+  display: inline-block;
+
+  figure {
+    margin: 0;
+
+    img {
+      vertical-align: middle;
+      max-width: 100%;
+    }
+  }
+
+  div {
+    background-color: $white;
+    font-size: 20px;
+    padding: 24px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+    em {
+      @include serif;
+
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 900;
+      color: $gray-darker;
+      display: block;
+      margin-top: -8px;
+      margin-bottom: 16px;
+      position: relative;
+
+      &::before {
+        background-color: $yellow;
+        content: "";
+        position: absolute;
+        left: -24px;
+        right: -24px;
+        top: 60%;
+        bottom: -10%;
+      }
+    }
+  }
+
+  @include mq(mid) {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+
+    div {
+      em {
+        font-size: 72px;
+        margin-top: -16px;
+      }
+    }
+  }
+}
+
+.bible-distribution-link {
+  @include serif;
+
+  font-size: 14px;
+  font-weight: 900;
+  color: $gray-darker;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: right;
+  margin-top: 16px;
+  display: block;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 24px;
+  position: relative;
+
+  &::after {
+    content: " →";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    top: calc(50% - 1px);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+
+  &:hover {
+    text-decoration: underline;
+
+    &::after {
+      transform: translateY(-50%) translateX(4px);
+    }
+  }
+
+  @include mq(mid) {
+    max-width: none;
+  }
+}
