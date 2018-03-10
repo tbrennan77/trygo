@@ -25,6 +25,7 @@ markdown: kramdown
 
 sass:
   load_paths:
+    - assets/css
     - node_modules/mq-sass/stylesheets
 
 # Exclude from processing.
