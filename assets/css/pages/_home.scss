@@ -1,2 +1,61 @@
 // Home
 // ==================================================
+
+// Hero
+// ==================================================
+.section--hero {
+  color: $white;
+  background-color: $gray-darker;
+  background: url("../images/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero__left {
+  max-width: 336px;
+}
+
+@include mq(medium) {
+  .section--hero {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+
+  .hero__left {
+    max-width: 376px;
+  }
+}
+
+@include mq(mid) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero__left {
+    max-width: 424px;
+  }
+}
+
+@include mq(large) {
+  .section--hero {
+    padding-top: 192px;
+    padding-bottom: 192px;
+  }
+
+  .hero__left {
+    max-width: 480px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-subtitle {
+    max-width: 416px;
+  }
+}
+
+.hero-title {
+  color: $yellow;
+}
