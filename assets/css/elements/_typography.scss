@@ -1,2 +1,7 @@
 // Typography
 // ==================================================
+body {
+  @include sans-serif;
+
+  color: $gray-dark;
+}
