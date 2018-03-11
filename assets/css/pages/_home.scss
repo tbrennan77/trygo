@@ -265,3 +265,69 @@
     max-width: none;
   }
 }
+
+// Ministries
+// ==================================================
+.section--ministries {
+  background-color: $gray-darker;
+
+  h2 {
+    color: $yellow;
+    text-align: center;
+  }
+}
+
+.ministries__item {
+  background-color: $white;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  figure {
+    margin: 0;
+
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+
+  > div {
+    padding: 24px;
+  }
+
+  h5 {
+    @include sans-serif;
+
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@include mq(600) {
+  .ministries {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ministries__item {
+    margin-bottom: 0;
+  }
+}
+
+@include mq(mid) {
+  .ministries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
