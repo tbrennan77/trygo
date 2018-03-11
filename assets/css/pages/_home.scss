@@ -331,3 +331,129 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+// Donate
+// ==================================================
+.section--donate {
+  background-color: $gray-lighter;
+  border-top: 8px solid $yellow;
+
+  h3 {
+    @include sans-serif;
+
+    font-weight: 500;
+    text-align: center;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.donate__frequency {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    text-align: center;
+    max-width: 224px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $white;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    h3 {
+      @include serif;
+
+      font-size: 48px;
+      margin-bottom: 0;
+
+      &::before {
+        font-size: 0.6em;
+        content: "$";
+      }
+    }
+
+    span {
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@include mq(small) {
+  .donate__frequency {
+    display: grid;
+    grid-gap: 16px;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(auto, 224px));
+
+    li {
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@include mq(medium) {
+  .donate__frequency {
+    margin-top: 40px;
+  }
+}
+
+@include mq(mid) {
+  .donate__frequency {
+    grid-template-columns: repeat(4, minmax(auto, 224px));
+  }
+}
+
+.donate-or {
+  font-weight: 500;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 1px dashed $gray-light;
+  }
+
+  span {
+    position: relative;
+    background-color: $gray-lighter;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.donate__once {
+  text-align: center;
+  padding: 24px;
+  background-color: $white;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  h4 {
+    @include sans-serif;
+  }
+
+  @include mq(small) {
+    text-align: default;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+      margin-bottom: 0;
+    }
+  }
+}
