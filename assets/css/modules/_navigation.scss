@@ -17,10 +17,6 @@
   text-decoration: none;
   padding: 12px 16px;
 
-  > span {
-    display: none;
-  }
-
   &:hover {
     color: $gray;
   }
@@ -46,9 +42,5 @@
 @include mq(660) {
   .nav-link {
     padding: 16px 24px;
-
-    > span {
-      display: inline;
-    }
   }
 }
