@@ -18,7 +18,7 @@ layout: default
       <div class="hero__left">
         <h1 class="hero-title">Getting the Gospel to the Philippines</h1>
         <p class="hero-subtitle">Our purpose is to reach the poor people of the Philippines with the Gospel of Jesus Christ.</p>
-        <p class="mb--0"><a href="#about" class="button button--outline-on-dark">Learn More</a></p>
+        <p class="mb--0"><a href="#about" class="button button--outline-on-dark js-modal" data-modal="video">Learn More</a></p>
       </div>
     </div>
   </header>
@@ -159,6 +159,16 @@ layout: default
     </div>
   </section>
 </main>
+
+<div data-modal="video" class="modal">
+  <button class="modal-close js-modal-close">&times;</button>
+  <div class="modal__content">
+    <div class="modal-video">
+      <iframe src="https://www.youtube.com/embed/x9vIGnnI5l0?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
 <footer role="contentinfo">
   <div class="container container--footer">
     <ul class="footer__links">
