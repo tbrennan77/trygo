@@ -5,7 +5,20 @@ var Site = (function() {
     modalInit();
   }
 
+  var modalVideo;
   var modalInit = function() {
+    // Initialize YouTube Video API
+    var script = document.createElement("script");
+    script.src = "https://www.youtube.com/iframe_api";
+
+    var firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
+
+    window.onYouTubeIframeAPIReady = function() {
+      modalVideo = new YT.Player("modal-video-player");
+    }
+
+    // Bind event handlers
     var modalOpenLinks = document.querySelectorAll(".js-modal");
     if (modalOpenLinks.length) {
       modalOpenLinks.forEach(function(el) {
@@ -27,12 +40,14 @@ var Site = (function() {
     var target = this.getAttribute("data-modal");
 
     document.querySelector(".modal[data-modal=" + target + "]").classList.add("is-open");
+    modalVideo.playVideo();
   }
 
   var modalClose = function(e) {
     e.preventDefault();
 
     document.querySelector(".modal.is-open").classList.remove("is-open");
+    modalVideo.stopVideo();
   }
 
   return {

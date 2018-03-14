@@ -37,20 +37,25 @@ $modal-close-size: 56px;
   width: $modal-close-size;
   height: $modal-close-size;
   margin: 0;
+  cursor: pointer;
   position: absolute;
   top: 0;
   right: 0;
   appearance: none;
+  transition: color 0.1s linear;
+
+  &:hover {
+    color: $gray;
+  }
 }
 
 .modal__content {
   width: 100%;
   max-width: 800px;
   max-height: calc(100vh - #{$modal-close-size * 2});
-  background: blue;
 }
 
-.modal-video {
+.modal__video {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
