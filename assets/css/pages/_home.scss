@@ -443,6 +443,8 @@
 
   h4 {
     @include sans-serif;
+
+    font-weight: 500;
   }
 
   @include mq(small) {
