@@ -358,6 +358,8 @@
     background: $white;
     padding: 24px;
     margin-bottom: 24px;
+    transition: transform 0.1s ease-in;
+    cursor: default;
 
     h3 {
       @include serif;
@@ -374,6 +376,10 @@
     span {
       display: block;
       margin-bottom: 24px;
+    }
+
+    &:hover {
+      transform: translateY(-8px) scale(1.05);
     }
   }
 }
@@ -436,11 +442,17 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 0.1s ease-in;
+  cursor: default;
 
   h4 {
     @include sans-serif;
 
     font-weight: 500;
+  }
+
+  &:hover {
+    transform: translateY(-8px) scale(1.05);
   }
 
   @include mq(small) {
