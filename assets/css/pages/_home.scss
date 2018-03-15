@@ -485,3 +485,30 @@
     }
   }
 }
+
+// Gallery
+// ==================================================
+.gallery {
+  max-height: 280px;
+  overflow: hidden;
+
+  img {
+    max-height: 280px;
+  }
+
+  @include mq(medium) {
+    max-height: 400px;
+
+    img {
+      max-height: 400px;
+    }
+  }
+
+  @include mq(large) {
+    max-height: 500px;
+
+    img {
+      max-height: 500px;
+    }
+  }
+}

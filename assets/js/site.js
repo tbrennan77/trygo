@@ -3,8 +3,12 @@ var Site = (function() {
 
   var init = function() {
     modalInit();
+    flickityInit();
   }
 
+
+  // Modal
+  // ==================================================
   var modalVideo;
   var modalInit = function() {
     // Initialize YouTube Video API
@@ -48,6 +52,17 @@ var Site = (function() {
 
     document.querySelector(".modal.is-open").classList.remove("is-open");
     modalVideo.stopVideo();
+  }
+
+
+  // Flickity
+  // ==================================================
+  var flickityInit = function() {
+    var $flickity = document.querySelector(".js-flickity");
+    var flickity = new Flickity($flickity, {
+      pageDots: false,
+      wrapAround: true,
+    });
   }
 
   return {
