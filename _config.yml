@@ -38,6 +38,7 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+  - README.md
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
