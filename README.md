@@ -4,11 +4,15 @@ This site was built with [Jekyll](https://jekyllrb.com/)—a static site generat
 
 ## Requirements
 
-Please see the [official documentation](https://jekyllrb.com/docs/installation/) for requirements for installing Jekyll.
+- [Jekyll](https://jekyllrb.com/)—see the [official documentation](https://jekyllrb.com/docs/installation/) for requirements for installing Jekyll.
+- [Node](https://nodejs.org/en/)
 
 ## Development
 
 The following are instructions for compiling and developing the site. For more about Jekyll, read the [official Quick-start guide](https://jekyllrb.com/docs/quickstart/).
+
+1. Clone the project and `cd` into the directory.
+2. Run `npm install` to install dependencies.
 
 ### HTML
 - Most of the markup lives in `index.html`.
@@ -17,12 +21,11 @@ The following are instructions for compiling and developing the site. For more a
 ### CSS
 
 - CSS is compiled via Sass in the `SCSS` syntax—Jekyll comes with [Sass support](https://jekyllrb.com/docs/assets/#sassscss).
-- Files are located in `assets/css`.
-- `assets/css/site.scss` is the manifest.
+- Files are located in `assets/css`—`assets/css/site.scss` is the manifest.
 
 ### JS
 
-- All JS is in `assets/js`.
+- JS files are in `assets/js`.
 
 ### Compiling
 
@@ -35,10 +38,7 @@ The following are instructions for compiling and developing the site. For more a
 
 I included some niceties if you’d like some extra, development-friendly tools. This requires:
 
-- [Node](https://nodejs.org/en/)
 - [Gulp](https://gulpjs.org/getting-started)
-
-Run `npm i` to install dependencies.
 
 The following are commands that you may find helpful:
 - `npm run watch`: run development environment—point your browser to `http://localhost:3000`. This includes CSS hot-reloading—see CSS changes instantly without reloading the browser.
