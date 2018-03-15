@@ -10,6 +10,10 @@ Please see the [official documentation](https://jekyllrb.com/docs/installation/)
 
 The following are instructions for compiling and developing the site. For more about Jekyll, read the [official Quick-start guide](https://jekyllrb.com/docs/quickstart/).
 
+### HTML
+- Most of the markup lives in `index.html`.
+- `index.html` relies on the default layout file, `_layouts/default.html`.
+
 ### CSS
 
 - CSS is compiled via Sass in the `SCSS` syntax—Jekyll comes with [Sass support](https://jekyllrb.com/docs/assets/#sassscss).
