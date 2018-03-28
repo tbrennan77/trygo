@@ -9,6 +9,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-uglify": "^3.0.0",
     "mq-sass": "^0.8.0",
+    "npm": "^5.8.0",
     "parallelshell": "^3.0.2"
   },
   "scripts": {
