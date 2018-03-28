@@ -12,7 +12,7 @@ This site was built with [Jekyll](https://jekyllrb.com/)—a static site generat
 The following are instructions for compiling and developing the site. For more about Jekyll, read the [official Quick-start guide](https://jekyllrb.com/docs/quickstart/).
 
 1. Clone the project and `cd` into the directory.
-2. Run `npm install` to install dependencies.
+2. Run `npm install && bundle` to install dependencies.
 
 ### HTML
 - Most of the markup lives in `index.html`.
