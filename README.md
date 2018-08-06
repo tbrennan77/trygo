@@ -1,6 +1,6 @@
-# Spread the Gospel website
+# TryGoMedia.com website
 
-This site was built with [Jekyll](https://jekyllrb.com/)—a static site generator. 
+This site was built with [Jekyll](https://jekyllrb.com/)—a static site generator. Props to Jon Suh for initial site architecture and Readme creation.
 
 ## Requirements
 
